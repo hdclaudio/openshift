@@ -1,0 +1,2 @@
+# openshift
+Teste CI/CD
