@@ -1,9 +1,9 @@
 pipeline {
     agent { docker { image 'php:8.0.7-cli-buster' } }
     stages {
-        stage('Intalações de Ambiente') {
+        stage('Ambiente') {
             steps {
-                echo "====++++Validando a Instalação do PHP++++===="
+                echo "====++++Validando a Instalacao do PHP++++===="
                 sh 'php --version'
             }
             steps { 
@@ -16,12 +16,5 @@ pipeline {
                 sh 'composer'
             }
         }
-        // stage("BackEnd"){
-        //     steps{
-        //         echo "====++++Clonando o Repositorio++++===="
-        //         git credentialsId: 'repositório azure', url: 'https://PGFTEC@dev.azure.com/PGFTEC/PGF-CONECTA3/_git/BackendBase'
-                
-        //     }            
-        // }
-    }
+     }
 }
