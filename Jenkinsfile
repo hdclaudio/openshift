@@ -1,6 +1,6 @@
 pipeline {
     agent { 
-        any { image 'php:8.0.7-cli-buster' }
+        docker { image 'php:8.0.7-cli-buster' }
          }
     stages {
         stage('Ambiente') {
