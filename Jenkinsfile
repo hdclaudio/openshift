@@ -1,4 +1,3 @@
-env.DOCKER_HOST = 'tcp://localhost:2375'
 pipeline {
     agent { 
         docker { image 'php:8.0.7-cli-buster' }
