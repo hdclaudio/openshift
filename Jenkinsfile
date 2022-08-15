@@ -1,6 +1,6 @@
 pipeline {
     agent { 
-        any { 
+        docker { 
                image 'php:8.0.7-cli-buster'
                reuseNode true
                }
