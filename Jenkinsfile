@@ -1,7 +1,7 @@
 pipeline {
-    agent { docker { image 'php:8.1.0-alpine' } }
+    agent { dockerfile true }
     stages {
-        stage('build') {
+        stage('Test') {
             steps {
                 sh 'php --version'
             }
